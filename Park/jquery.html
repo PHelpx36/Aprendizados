@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando jquery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar fixed-top bg-body-tertiary navbar bg-dark" data-bs-theme="dark"">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Logo_Pirelli.svg/800px-Logo_Pirelli.svg.png" alt="Home"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre mim</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">Contato</a>
+                
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projetos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/projetos.html">SQL Server</a></li>
+                  <li><a class="dropdown-item" href="#">Css</a></li>
+                  <li><a class="dropdown-item" href="#">HTML</a></li>
+                  <li><a class="dropdown-item" href="#">Javascript</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="marg">
+        <h1>Somando Valores com o Jquery</h1>
+        Valor 1<input type="Number" id="v1">
+        Valor 2<input type="Number" id="v2">
+        <button type="button" id="soma" class="btn btn-outline-dark">Somar js PURO</button>
+        <button type="button" id="somajq" class="btn btn-outline-dark">Somar Jquery</button>
+        <div id="resultado">
+            Resultado do js PURO aqui!
+        </div>
+        <div id="resultado1">
+            Resultado do jquery aqui!
+        </div>
+    </div>
+      <input type="text" id="write">
+      <div id="copia"></div>
+    <div id="section">
+        <div id="quadrado">
+          <div id="texto">
+            Testando
+          </div>
+        </div>
+        <div id="quadrado" class="quadrado2">
+          Trigger!
+        </div>
+    </div>
+      <div id="texto1">
+          
+      </div>
+      <div>
+        <div id="bloco">
+          <div id="menu" >
+            <div id="item"><a href="" id>item 1</a><br></div>
+            <div id="item"><a href="" id>item 2</a><br></div>
+            <div id="item"><a href="" id>item 3</a></div>
+          </div>
+          <div id="controle">
+            <a id="cima" class="dropdown-toggle">cima/baixo</a>
+            
+          </div>
+        </div>
+      </div>
+      
+      <abbr title="quadrodo_animação">
+        <div id="quadrado3">
+        </div>
+      </abbr>
+      <div id="res">
+          
+      </div>
+      <div id="res1">
+      
+      </div>
+      
+      <div id="res2">
+            <ul id="lista">
+            <li>banana</li>
+            <li>maça</li>
+            <li>pera</li>
+          </ul>
+      </div>
+      <button type="button" class="btn ocultar btn-outline-primary">ocultar</button>
+      <button type="button" class="btn teste btn-outline-primary">ocultar</button>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Registros
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="register">
+              
+            </div>
+            <div class="buttons">
+              <div>
+                <button type="button" id="remove" class="remove btn btn-danger">Remove Formulary</button>
+              </div>
+              <div>
+                <button type="button" id="add" class="add btn btn-primary">Add Fromulary</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <form>
+      
+      <fieldset class="field">
+        <legend>Cadastro</legend>
+        <hr class="barra">
+        <div class="dados">
+          <label for="if_nome">Nome:</label>
+          <input class="quebra" type="text" name="f_nome" id="if_nome" size="30" placeholder="nome do usuário" required>
+
+          <label for="if_idade">Idade:</label>
+          <input class="quebra" type="number" name="f_idade" id="if_idade" size="30" pattern="[0-9]{2}" required>
+
+          <label for="if_email">Email:</label>
+          <input class="quebra" type="email" name="f_email" id="if_email" size="30" placeholder="name@example.com" required>
+          
+          <label for="if_tel">Telefone:</label>
+          <input class="quebra" type="tel" name="f_tel" id="if_tel" size="30" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" placeholder="(xx)xxxxx-xxxx">
+
+          <label for="if_senha">Senha:</label>
+          <input class="quebra" type="password" name="f_senha" id="if_senha" size="30" pattern="[a-zA-Z0-9]{5}" maxlength="5" placeholder="•••••">
+
+          <label class="quebra">Gênero</label>
+          <input type="radio" name="f_genero" id="if_genM" value="Masculino"><label class="espaço_lat">Masculino</label>
+          <input type="radio" name="f_genero" id="if_genF" value="Feminino"><label class="espaço_hor">Feminino</label>
+        </div>
+        
+        <hr class="barra">
+
+        <div class="habilitacao">
+          <label class="quebra">Habilitação</label>
+          <input id="if_car" type="radio" name="f_car" value="Y"><label class="espaço_lat">Sim</label>
+          <input id="if_car1" type="radio" name="f_car" value="N"><label>Não</label>
+          <label id="CNH" class="espaço_lat2">Selecione o arquivo da CNH:</label>
+          <input id="CNH2" class="espaço_lat2" button="btnf" type="file" name="f_cnh_file" accept=".pdf/*">
+        </div>
+
+        <hr class="barra">
+
+        <div class="escolaridade">
+          <label class="quebra espaço_hor2">Formação:</label>
+          <select id="lista_formacao" class="quebra espaço_hor2" onchange="valueLista()" name="f_select">
+            <option selected disabled value="">Selecione</option>
+            <option value="3">Bacharelado</option>
+            <option value="2">Ensino Médio</option>
+            <option value="1">Ensino Fundamental</option>
+          </select>
+        </div>
+
+        <div class="curso">
+          <label class="quebra espaço_hor2">Curso:</label>
+          <input id="if_curso" list="f_curso" size="30" name="f_curso">
+          <datalist id="f_curso">
+            <option value="_Engenharia_da_Computação">Engenharia da Computação</option>
+            <option value="_Engenharia_dos_Materias">Engenharia dos Materias</option>
+            <option value="_Engenharia_Química">Engenharia Química</option>
+            <option value="_Ciência_de_Dados">Ciência de Dados</option>
+            <option value="_Psicologia">Psicologia</option>
+            <option value="_Medicina">Medicina</option>
+          </datalist>
+        </div>
+
+        <hr class="barra">
+
+        <label class="quebra espaço_hor2">Possui estágio?</label>
+        <input id="est" type="radio" name="f_est" value="Y" onclick=""><label class="espaço_lat">Sim</label>
+        <input id="est1" type="radio" name="f_est" value="N"><label>Não</label>
+        
+      <fieldset class="stag field">
+        <legend>STAG</legend>
+        <hr class="barra">
+        <label>Local:</label>
+        <input class="quebra" id="if_local" list="f_local" name="f_local" size="30">
+        <datalist id="f_local">
+          <option value="SP - Santo André">Santo André</option>
+          <option value="SP - Faria Lima">Faria Lima</option>
+          <option value="SP - São Bernardo">São Bernardo</option>
+          <option value="SP - Campinas">Campinas</option>
+          <option value="BH - Feira de Santana">Feira de Santana</option>
+        </datalist>
+        
+        <label>Cargo:</label>
+        <input class="quebra" type="text" id="if_cargo" name="f_cargo" size="30">
+        
+        <label>Superior:</label>
+        <input class="quebra" id="if_sup" list="f_sup" name="f_sup" size="30">
+        <datalist id="f_sup">
+          <option value="@st1limavi">Victor</option>
+          <option value="@st1barboke">Kevin</option>
+          <option value="@battiro001">Roberta</option>
+          <option value="@freitlu001">Lucas</option>
+          <option value="@pereica001">Cassio</option>
+        </datalist>
+
+        <label for="f_ativ">Atividades:</label>
+        <textarea class="quebra" name="atvi" id="f_ativ" rows="2" placeholder="Digite..."></textarea>
+
+      </fieldset>
+      </fieldset>
+      <input type="hidden" name="f_teste" value="cadastro">
+      <div id="btns">
+        <button id="botao_f1" type="button">Salvar</button>
+        <input type="reset" name="f_btn_limpar" value="Limpar">
+      </div>
+      
+    </form>
+
+    <button type="button" class="quebra pop-up btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Info
+    </button>  
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Informações do Cadastro</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Email</th>
+      <th scope="col">Telefone</th>
+      <th scope="col">Genero</th>
+      <th scope="col">Ações</th>
+      <button type='button' class='t_btn1 btn btn-danger'>Apagar</button>
+    </tr>
+  </thead>
+  <tbody id="t_dados">
+    
+  </tbody>
+  </table>
+
+    <abbr title="iframe(projeto01)"><iframe src="projeto01.html" frameborder="0"></iframe></abbr>
+
+    <script src="js/jquey.js"></script>
+
+    <script>
+      
+        $("#botao_f1").click(function() {
+        let form = this.form
+                
+        //Genero
+        let gener = setGenero(form.if_genM)
+                
+        //Habilitação
+        let hab = setHabilitacao(form.if_car)
+      
+        //Formação
+        let  valor = form.lista_formacao.value
+        let formacao = setFormacaoLista(valor)
+        let curso = setCurso(form.if_curso.value)
+
+        //estagio
+        let estagio = setEstagio(form.est)
+        if(estagio){
+          local = form.if_local.value
+          cargo = form.if_cargo.value
+          sup = form.if_sup.value
+          ativs = form.f_ativ.value
+        }else{
+          local = false
+          cargo = false
+          sup = false
+          ativs = false
+        }
+        
+        //Cadastro
+        let objetoJson1 = {
+          nome: form.if_nome.value,
+          idade: parseInt(form.if_idade.value),
+          email: form.if_email.value,
+          tel: form.if_tel.value,
+          genero: gener,
+          habilitacao: hab,
+          formacao: formacao,
+          curso: curso,
+          estagio: estagio,
+          local: local,
+          cargo: cargo,
+          sup: sup,
+          ativs: ativs
+        }
+
+        postForm(objetoJson1, "FutuSite")
+      })
+     
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

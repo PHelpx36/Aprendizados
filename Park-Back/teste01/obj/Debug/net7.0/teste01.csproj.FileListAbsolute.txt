@@ -1,0 +1,15 @@
+C:\Users\st1limavi\Desktop\Park-Back\teste01\bin\Debug\net7.0\teste01.exe
+C:\Users\st1limavi\Desktop\Park-Back\teste01\bin\Debug\net7.0\teste01.deps.json
+C:\Users\st1limavi\Desktop\Park-Back\teste01\bin\Debug\net7.0\teste01.runtimeconfig.json
+C:\Users\st1limavi\Desktop\Park-Back\teste01\bin\Debug\net7.0\teste01.dll
+C:\Users\st1limavi\Desktop\Park-Back\teste01\bin\Debug\net7.0\teste01.pdb
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.csproj.AssemblyReference.cache
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.AssemblyInfoInputs.cache
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.AssemblyInfo.cs
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.csproj.CoreCompileInputs.cache
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.dll
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\refint\teste01.dll
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.pdb
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\teste01.genruntimeconfig.cache
+C:\Users\st1limavi\Desktop\Park-Back\teste01\obj\Debug\net7.0\ref\teste01.dll

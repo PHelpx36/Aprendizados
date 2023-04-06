@@ -1,0 +1,10 @@
+{
+    "nome":"Victor",
+    "Idade":21,
+    "estagio":true,
+    "hobies": ["Natação", "Jogar" , "Viajar"],
+    "Estudos": {
+        "Linguas": ["Javascript", "Html" , "CSS", "C#"],
+        "Curso" : "Engenharia da Computação"
+    }
+}

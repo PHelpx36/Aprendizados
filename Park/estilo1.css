@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+body a {
+    text-decoration: none;
+    color: rgb(238, 204, 204);
+}
+body {
+    margin:0;
+    font: normal Arial;
+}
+#TopMenu li{
+    color:white;
+    text-decoration:none;
+    display: flex;
+    margin-top: auto;
+    text-align: right;
+    margin-bottom: auto;
+    margin-right: 50px;
+    font-size:larger;
+}
+.section1 {
+    display: flex;
+    height: 33vh;
+    background-color: rgba(0, 0, 0, 0.096);
+}
+.centralize {
+    margin: auto;
+    text-align: center;
+}
+.section2 {
+    display: flex;
+    height: 33vh;
+    background-color:rgba(0, 0, 0, 0.034);
+    flex-direction: column;
+}
+.section3 {
+    display: flex;
+    height: 33vh;
+    background-color:rgba(0, 0, 0, 0);
+    flex-direction: column;
+}
+.logo {
+    width: 9vw;
+    height: 3vw;
+    margin-top: auto;
+    text-align: right;
+    margin-bottom: auto;
+    padding-left: 15px;
+}
+.Img {
+    width: 15vw;
+    height: 14vw;
+}
+.Texto {
+    text-align: left;
+}
+footer { 
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    height: 140px;
+}
+#rodapé li{
+    color: white;
+    font-style: italic;
+    text-decoration:none;
+    display: block;
+    margin: auto;
+}
+#rodapé h2{
+    color: white;
+    text-decoration:none;
+    display: block;
+    margin: auto;
+}
+.botão {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    border-radius: 15px;
+}
+.section {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+}
+#TopMenu {
+    display:flex;
+    background-color: rgb(0, 0, 0);
+}
+.alinhar {
+    display:flex;
+    flex-direction: column;
+}
+.section4 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    height: 120px;
+    width: 220px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.733);
+}
+.app {
+    height: 20px;
+    width: 20px;
+}
+.table1 {
+    width: 50%;
+}
+.texto1 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.texto2 {
+    text-align: right;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+
+#testando {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.nota {
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+    position: relative;
+}

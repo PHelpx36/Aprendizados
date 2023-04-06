@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque</title>
+    
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .cabeçalho {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        justify-content: space-between;
+        height: 8vh;
+    }
+    #fonte li {
+        color:white;
+        text-decoration:none;
+        display: flex;
+    }
+    .centralize {
+        margin: auto;
+        text-align: center;
+        
+    }
+    .divisoria1 {
+        background-color: rgba(189, 189, 189, 0.671);
+        height: 33vh;
+        display: flex;
+    }
+    .divisoria2 {
+        background-color: rgba(189, 189, 189, 0.966);
+        height: 33vh;
+        display: flex;
+    }
+    #coxinha {
+        font-size: larger;
+        color: white;
+        margin: auto;
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    #teste h2{
+        font-size: x-large;
+        color: white;
+        margin: auto;
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    #área {
+        background-color: rgb(67, 145, 15);
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size:large;
+    }
+    #área2 {
+        background-color: rgb(67, 145, 15);
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        font-size:large;
+    }
+    #fonte{
+        display: flex;
+
+    }
+    #fonte li+li {
+        margin-left: 10px;
+        background-color: green;
+    }
+    #fonte li span {
+        background-color: purple;
+    }
+</style>
+<body>
+    <nav class="cabeçalho">
+        <ul id="fonte" class="centralize">
+            <li><span>home</span></li>
+            <li>projetos</li>
+            <li>outros</li>
+        </ul>
+    </nav>
+    <div class="divisoria1 centralize">
+        <h1 class="centralize">
+            Victor Amadeu de Lima <br>
+            <script>
+                var li1 = window.document.getElementsByTagName('li')[2];
+                document.write(li1.innerText);
+                var ul1 = window.document.querySelector('ul#fonte')
+                ul1.style.background = 'red';
+            </script>
+        </h1>
+    </div>
+    <div class="divisoria2">
+        <div id="área" class="centralize" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            Testando
+        </div>
+        
+        <div id="área2" class="centralize">
+            Testando1
+        </div>
+    </div>
+    <div class="divisoria1">
+        <div id ="soma" class="centralize">
+            <h1>Somar valores</h1>
+            <input type="number" name="txtn1" id="txtn1"> +
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" onclick="somar()">
+            <div id="res">Resultado</div>
+        </div>
+        <div class="centralize">
+            <h1>Sistema Time Sheet</h1>
+            <input type="number" name="txtn3" id="txtn3">
+            <input type="button" value="Verificar" onclick="tempo()">
+            <div id="sheet">Quer verificar se estar nos conformes da empresa? <br> Você precisa trabalhar no mínimo 60 horas!</div>
+        </div>
+    </div>
+    <script src="./Parquinho.js"></script>
+</body>
+</html>
